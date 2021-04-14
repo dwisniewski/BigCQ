@@ -1,0 +1,39 @@
+{
+    "ASK": [
+        "[IS EVERY] {CAD} [A KIND] of {CAR}?",
+        "[IS EVERY] {CAD} {CAR}?",
+        "[CAN] {CAD} be [A KIND] of {CAR}?",
+        "[CAN] {CAD} be {CAR}?",
+        "[CAN] {CAD} be [REGARDED] as {CAR}",
+        "[CAN] {CAD} be [REGARDED] as [A KIND] of {CAR}",
+        "[CAN] [I] [REGARD] {CAD} as {CAR}?",
+        "[IS THERE] {CAD} that [CAN] be [A KIND] of {CAR}?",
+        "[IS THERE] {CAD} that [CAN] be {CAR}?",
+        "[IS THERE] {CAD} that [CAN] be [REGARDED] as [A KIND] of {CAR}?",
+        "[IS THERE] {CAD} that [CAN] be [REGARDED] as {CAR}?",
+        "[DO] {CAD} being [A KIND] of {CAR} exist?",
+        "[DO] {CAD} being {CAR} exist?",
+        "Is [IT] true that {CAD} is [A KIND] of {CAR}?",
+        "Is [IT] true that {CAD} is {CAR}?"
+    ],
+    "SELECT_CAD": [
+        "[WHAT] [THINGS] are [THE TYPES] of {CAR}?",
+        "[WHAT] are [THE TYPES] of {CAR}?",
+    ],
+    "SELECT_CAR": [
+        "[WHAT] [KIND] of [THING] [IS EVERY] {CAD}?",
+        "[WHAT] [THING] [IS EVERY] {CAD}?",
+        "[WHAT] is the supertype of {CAD}?",
+        "To [WHAT] [CATEGORY] [CAN] {CAD} be [CLASSIFIED] to?",
+        "[WHAT] [CATEGORY] [DO] {CAD} belong to?",
+    ],
+    "SELECT_COUNT_CAR": [
+        "How many supertypes does {CAD} belong to?",
+        "How many supertypes does {CAD} have?",
+        "How many [CATEGORIES] is {CAD} of?",
+    ],
+    "SELECT_COUNT_CAD": [
+        "How many [KINDS] does {CAR} have?",
+        "How many [KINDS] of {CAR} [ARE THERE]?"
+    ]
+}
