@@ -1,0 +1,28 @@
+{
+    "ASK": [
+        "[IS] [EVERY] {CAD} [THE SAME AS] {CAR}?",
+        "[CAN] {CAD} be [THE SAME AS] {CAR}?",
+        "[CAN] {CAD} be [REGARDED] [THE SAME AS] {CAR}?",
+        "[CAN] [I] [REGARD] {CAD} [THE SAME AS] {CAR}?",
+        "[IS THERE] {CAD} that [IS] [THE SAME AS] {CAR}?",
+        "[DOES] {CAD} being [THE SAME AS] {CAR} exist?",
+        "Is [IT] true that {CAD} is [THE SAME AS] {CAR}?",
+        "Is [IT] true that {CAD} is {CAR}?"
+    ],
+    "SELECT_CAD": [
+        "[WHAT] [THINGS] are [THE SAME AS] {CAR}?",
+        "[WHAT] [IS] [THE SAME AS] {CAR}?"
+    ],
+    "SELECT_CAR": [
+        "[WHAT] [KIND] of [THING] [IS] [THE SAME AS] {CAD}?",
+        "[WHAT] [THING] [IS] [THE SAME AS] {CAD}?",
+        "[WHAT] [IS] [THE SAME AS] {CAD}?"
+    ],
+    "SELECT_COUNT_CAR": [
+        "How many classes of {CAD} [IS] [THE SAME AS] it?",
+        "How many classes of {CAD} being [THE SAME AS] it exists?"
+    ],
+    "SELECT_COUNT_CAD": [
+        "How many [KINDS] of {CAR} being [THE SAME AS] it exist?"
+    ]
+}

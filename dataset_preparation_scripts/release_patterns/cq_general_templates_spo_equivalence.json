@@ -1,0 +1,41 @@
+{
+    "ASK": [
+        "[CAN] [EVERY] {CAD} be considered [THE SAME AS] a thing that {VERB} {CAR}?",
+        "[DOES] [EVERY] {CAD} equal a thing that {VERB} {CAR}?",
+        "[CAN] {CAD} be [THE SAME AS] something that {VERB} {CAR}?",
+        "[IS THERE] {CAD} that [CAN] be[THE SAME AS] things that can {VERB} {CAR}?",
+        "[IS THERE] {CAD} that [CAN] be [THE SAME AS] things that can {VERB} {CAR}?",
+        "[IS THERE] {CAD} that is [THE SAME AS] things that {VERB} {CAR}?",
+        "[IS THERE] {CAD} that [CAN] be [REGARDED] as [THE SAME AS] things that {VERB} {CAR}?",
+        "Is [IT] true that {CAD} [IS] [THE SAME AS] things that {VERB} {CAR}?"
+    ],
+    "SELECT_CAD": [
+        "[WHAT] is [THE SAME AS] things that {VERB} {CAR}?",
+        "[WHAT] [THINGS] are [THE SAME AS] things that {VERB} {CAR}?",
+        "[WHAT] [KIND] of [THINGS] [THE SAME AS] to things that {VERB} {CAR}?"
+    ],
+    "SELECT_CAR": [
+        "[WHAT] is [THE SAME AS] things that {CAD} {VERB}?",
+        "[WHAT] [THINGS] are [THE SAME AS] things that {CAD} {VERB}?"
+    ],
+    "SELECT_VERB": [
+        "What {CAD} [CAN] do with {CAR}?",
+        "What {CAR} [CAN] do with {CAD}?",
+        "What {CAD} does with {CAR}?",
+        "What {CAR} does with {CAD}?",
+        "What relates {CAD} and {CAR}?",
+        "What can {CAD} do to {CAR}?",
+        "What relation between {CAD} and {CAR} exists?"
+    ],
+    "SELECT_COUNT_CAD": [
+        "How many [CATEGORIES] of [THINGS] are [THE SAME AS] things that {VERB} {CAR}?"
+    ],
+    "SELECT_COUNT_CAR": [
+        "How many [CATEGORIES] of [THINGS] are [THE SAME AS] things that {CAD} {VERB}?"
+    ],
+
+    "SELECT_COUNT_VERB": [
+        "How many relations [ARE THERE] between {CAD} and {CAR}?",
+        "How many things [CAN] {CAD} do with {CAR}?"
+    ]
+}

@@ -22,7 +22,7 @@ class Summarizer:
                 if queries[category]:
                     total_queries.append(queries[category].lower())
 
-        return len(set(total_cqs))
+        return len(set(total_queries))
 
     def average_queries_per_cq(self, data):
         queries_per_cq = dict()
@@ -80,8 +80,20 @@ class Summarizer:
     def make_summary(self):
         print(f"Number of unique verbalizations: {self.calc_unique_verbalizations(self.data)}")
         print(f"Number of unique cqs: {self.calc_number_of_unique_cqs(self.data)}")
-        print(f"Number of unique queries: {self.calc_number_of_unique_cqs(self.data)}")
+        print(f"Number of unique queries: {self.calc_number_of_unique_queries(self.data)}")
         print(f"Average queries per CQ: {self.average_queries_per_cq(self.data)}")
         print(f"Average CQs per query: {self.average_cqs_per_query(self.data)}")
         print(f"Number of unique CQs per question type: {self.calc_number_of_unique_cqs_per_category(self.data)}")
         print(f"Number of unique queries per question type: {self.calc_number_of_unique_queries_per_category(self.data)}")
+
+    def print_cqs(self):
+        for _, cqs, _ in self.data:
+            for c in cqs:
+                for cq in cqs[c]:
+                    print(cq.lower())
+
+    def print_queries(self):
+        for _, _, queries in self.data:
+            for c in queries:
+                if queries[c]:
+                    print(queries[c])

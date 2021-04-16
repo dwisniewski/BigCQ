@@ -19,13 +19,13 @@ class SynonymesGenerator:
         synset expansions.
         Eg. synset: [is] -> is, are
         transforms cq: [is] there X to [is there X, are there X] """
-        expanded_variants = []
+        expanded_variants = set()
         if re.search(synset, cq) is None:
             # given synset does not occur in a CQ
             return [cq]  # nothing to expand
         else:
             for synonym in self.synonymes[synset]:
-                expanded_variants.append(re.sub(re.escape(synset), synonym, cq))
+                expanded_variants.add(re.sub(re.escape(synset), synonym, cq))
         return expanded_variants
 
     def expand_cq_pattern(self, cq_pattern: str) -> List[str]:

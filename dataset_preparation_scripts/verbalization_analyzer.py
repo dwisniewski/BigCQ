@@ -75,6 +75,9 @@ class Analyzer:
         is_complex_range, range_elems = \
             self.is_complex_description(class_axiom_range)
 
+        class_axiom_domain = re.sub(r'\ba ', ' ', class_axiom_domain)  # reject "a" before class id
+        class_axiom_range = re.sub(r'\ba ', '', class_axiom_range) # reject "a" before class id
+
         return {
             'root_verb': root_verb,
             'complex_domain': is_complex_domain,
@@ -128,7 +131,7 @@ class Analyzer:
             span (begin_idx, end_idx) representing positions of the beginning and end of the subtree in text.
         '''
         start_ids = [t.idx for t in token.subtree if t.text if t.text.lower() != 'every']
-        end_ids = [t.idx + len(t) for t in token.subtree if t.text]
+        end_ids = [t.idx + len(t) for t in token.subtree if t.text if t.text not in ['!', '.']]
 
         start = min(start_ids) if len(start_ids) > 0 else -1
         end = max(end_ids) if len(end_ids) > 0 else -1

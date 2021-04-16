@@ -3,7 +3,8 @@
         "[IS EVERY] {CAD} [A KIND] of {CAR}?"
     ],
     "SELECT_CAD": [
-        "[WHAT] [THINGS] are [THE TYPES] of {CAR}?"
+        "[WHAT] [THINGS] are [THE TYPES] of {CAR}?",
+        "What is {CAR}"
     ],
     "SELECT_CAR": [
         "[WHAT] [KIND] of [THING] [IS EVERY] {CAD}?"

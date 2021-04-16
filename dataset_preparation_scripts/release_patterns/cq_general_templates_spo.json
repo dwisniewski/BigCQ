@@ -1,23 +1,26 @@
 {
     "ASK": [
-        "[DO] {CAD} {VERB} {CAR}?",
-        "[DO] [EVERY] {CAD} {VERB} {CAR}?",
+        "[DOES] {CAD} {VERB} {CAR}?",
+        "[DOES] [EVERY] {CAD} {VERB} {CAR}?",
         "[CAN] {CAD} {VERB} {CAR}?",
         "[CAN] [EVERY] {CAD} {VERB} {CAR}?",
-        "[CAN] {CAD} be [REGARDED] as something that {VERB} {CAR}",
+        "[CAN] {CAD} be [REGARDED] as something that {VERB} {CAR}?",
         "[IS THERE] {CAD} that [CAN] {VERB} {CAR}?",
         "[IS THERE] {CAD} that {VERB} {CAR}?",
         "[IS THERE] {CAD} that [CAN] be [REGARDED] as {VERB} {CAR}?",
-        "Is [IT] true that {CAD} {VERB} {CAR}?",
+        "Is [IT] true that {CAD} {VERB} {CAR}?"
     ],
     "SELECT_CAD": [
-        "[WHAT] [THINGS] are {VERB} {CAR}?",
-        "[WHAT] are {VERB} {CAR}?",
+        "[WHAT] {VERB} {CAR}?",
+        "[WHAT] [THINGS] {VERB} {CAR}?",
+        "[WHAT] [KIND] of [THINGS] {VERB} {CAR}?"
     ],
     "SELECT_CAR": [
-        "[WHAT] [KIND] of [THING] {VERB} {CAD}?",
-        "[WHAT] [THING] {VERB} {CAD}?",
-        "[WHAT] is {VERB} by {CAD}?",
+        "[WHAT] {CAD} {VERB}?",
+        "[WHAT] {CAD} [CAN] [I] {VERB}?",
+        "[WHAT] [THINGS] {CAD} {VERB}?",
+        "[WHAT] [KIND] of [THINGS] {CAD} {VERB}?",
+        "[WHAT] is {VERB} by {CAD}?"
     ],
     "SELECT_VERB": [
         "What {CAD} [CAN] do with {CAR}?",
@@ -26,17 +29,18 @@
         "What {CAR} does with {CAD}?",
         "What relates {CAD} and {CAR}?",
         "What can {CAD} do to {CAR}?",
-        "What relation between {CAD} and {CAR} exists?"
-    ],
-    "SELECT_COUNT_CAR": [
-        "How many [CATEGORIES] {CAD} {VERB}",
-        "How many [CATEGORIES] {VERB} {CAD}?"
+        "What relation between {CAD} and {CAR} exists?",
+        "[WHAT] is the relation between {CAD} and {CAR}?"
     ],
     "SELECT_COUNT_CAD": [
-        "How many [CATEGORIES] are {VERB} by {CAR}?"
+        "How many [CATEGORIES] of [THINGS] {VERB} {CAR}?"
     ],
+    "SELECT_COUNT_CAR": [
+        "How many [CATEGORIES] of [THINGS] {CAD} {VERB}?"
+    ],
+
     "SELECT_COUNT_VERB": [
         "How many relations [ARE THERE] between {CAD} and {CAR}?",
-        "How many things [CAN] {CAD} do with {CAR}?",
+        "How many things [CAN] {CAD} do with {CAR}?"
     ]
 }
