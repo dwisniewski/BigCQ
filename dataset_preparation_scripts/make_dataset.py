@@ -22,7 +22,7 @@ cq_generator = CQGenerator(
     synonymes_path = f'{resources_path}/synonym_classes.json')
 query_generator = SPARQLOWLGenerator()
 
-with open('../axiom2turtle.preprocessed.csv') as csv_file:
+with open('../verbalization2turtle.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     result = []
 
