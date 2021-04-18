@@ -2,6 +2,7 @@ import csv
 from verbalization_analyzer import Analyzer
 from generators import CQGenerator, SPARQLOWLGenerator
 from summarizer import Summarizer
+from serializer import Serializer
 import pprint
 import pickle
 
@@ -42,10 +43,12 @@ with open('../axiom2turtle.preprocessed.csv') as csv_file:
 
         result.append((verbalization, cqs, queries))
 
-    outfile = open('result','wb')
-    pickle.dump(result, outfile)
-    outfile.close()
+    serializer = Serializer(result)
+    serializer.serialize_result()
+    #outfile = open('result','wb')
+    #pickle.dump(result, outfile)
+    #outfile.close()
 
     #Summarizer(result).print_queries()
-    Summarizer(result).make_summary()
+    #Summarizer(result).make_summary()
     #Summarizer(result).print_cqs()

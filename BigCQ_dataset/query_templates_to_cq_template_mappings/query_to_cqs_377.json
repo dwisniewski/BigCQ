@@ -1,0 +1,13 @@
+{
+    "cqs": [
+        "How many things could no c1 do with c2?",
+        "How many relations exist between no c1 and c2?",
+        "How many relations are there between no c1 and c2?",
+        "How many relations are described between no c1 and c2?",
+        "How many relations are proposed between no c1 and c2?",
+        "How many things may no c1 do with c2?",
+        "How many things can no c1 do with c2?",
+        "How many relations are available between no c1 and c2?"
+    ],
+    "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { <c1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:allValuesFrom [ owl:complementOf <c2> ] ] . }"
+}

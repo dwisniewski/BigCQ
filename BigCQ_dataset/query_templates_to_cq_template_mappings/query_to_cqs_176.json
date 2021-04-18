@@ -1,0 +1,21 @@
+{
+    "cqs": [
+        "How many relations are described between c1 and c2 that op2 c3?",
+        "How many things could c1 do with c2 that op2 c3?",
+        "How many things can c1 do with c2 that op2 c3?",
+        "How many relations are there between c1 and c2 that op2 c3?",
+        "How many relations exist between c1 and c2 that op2 c3?",
+        "How many things may c1 do with c2 that op2 c3?",
+        "How many relations are available between c1 and c2 that op2 c3?",
+        "How many relations are proposed between c1 and c2 that op2 c3?",
+        "How many relations are described between c1 and c2 that op2 c3?",
+        "How many things could c1 do with c2 that op2 c3?",
+        "How many things can c1 do with c2 that op2 c3?",
+        "How many relations are there between c1 and c2 that op2 c3?",
+        "How many relations exist between c1 and c2 that op2 c3?",
+        "How many things may c1 do with c2 that op2 c3?",
+        "How many relations are available between c1 and c2 that op2 c3?",
+        "How many relations are proposed between c1 and c2 that op2 c3?"
+    ],
+    "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { <c1> owl:equivalentClass [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:someValuesFrom [ owl:intersectionOf ( <c2> [ rdf:type owl:Restriction ; owl:onProperty <op2> ; owl:someValuesFrom <c3> ] ) ] ] . }"
+}

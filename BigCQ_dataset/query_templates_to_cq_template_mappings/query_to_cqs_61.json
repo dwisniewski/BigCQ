@@ -1,0 +1,13 @@
+{
+    "cqs": [
+        "How many relations exist between everything that op1  c1 and that does not op2 and c3?",
+        "How many relations are described between everything that op1  c1 and that does not op2 and c3?",
+        "How many things may everything that op1  c1 and that does not op2 do with c3?",
+        "How many relations are proposed between everything that op1  c1 and that does not op2 and c3?",
+        "How many things could everything that op1  c1 and that does not op2 do with c3?",
+        "How many relations are available between everything that op1  c1 and that does not op2 and c3?",
+        "How many relations are there between everything that op1  c1 and that does not op2 and c3?",
+        "How many things can everything that op1  c1 and that does not op2 do with c3?"
+    ],
+    "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { [ owl:equivalentClass [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:someValuesFrom <c3> ] ; owl:intersectionOf ( [ owl:complementOf [ rdf:type owl:Restriction ; owl:onProperty <op2> ; owl:someValuesFrom <c2> ] ] [ rdf:type owl:Restriction ; owl:onProperty <op1> ; owl:someValuesFrom <c1> ] ) ] . }"
+}

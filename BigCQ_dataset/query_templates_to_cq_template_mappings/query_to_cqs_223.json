@@ -1,0 +1,18 @@
+{
+    "cqs": [
+        "which is the relation between c1 and exactly 999 things?",
+        "What exactly 999 things does with c1?",
+        "what is the relation between c1 and exactly 999 things?",
+        "What c1 can do with exactly 999 things?",
+        "What relation between c1 and exactly 999 things exists?",
+        "What exactly 999 things may do with c1?",
+        "What c1 could do with exactly 999 things?",
+        "What exactly 999 things could do with c1?",
+        "What relates c1 and exactly 999 things?",
+        "What c1 may do with exactly 999 things?",
+        "What can c1 do to exactly 999 things?",
+        "What exactly 999 things can do with c1?",
+        "What c1 does with exactly 999 things?"
+    ],
+    "query": "SELECT ?x WHERE { <c1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:cardinality \"999\"^^xsd:nonNegativeInteger ] . }"
+}

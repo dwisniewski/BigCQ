@@ -1,0 +1,26 @@
+{
+    "cqs": [
+        "How many examples of c2 being equal to it exist?",
+        "How many specializations of c2 being identical with it exist?",
+        "How many subsets of c2 being equal to it exist?",
+        "How many specializations of c2 being the same as it exist?",
+        "How many examples of c2 being the same as it exist?",
+        "How many forms of c2 being the same as it exist?",
+        "How many types of c2 being equal to it exist?",
+        "How many types of c2 being the same as it exist?",
+        "How many forms of c2 being equal to it exist?",
+        "How many subsets of c2 being identical with it exist?",
+        "How many kinds of c2 being the same as it exist?",
+        "How many subsets of c2 being the same as it exist?",
+        "How many sorts of c2 being equal to it exist?",
+        "How many sorts of c2 being the same as it exist?",
+        "How many forms of c2 being identical with it exist?",
+        "How many kinds of c2 being identical with it exist?",
+        "How many specializations of c2 being equal to it exist?",
+        "How many kinds of c2 being equal to it exist?",
+        "How many examples of c2 being identical with it exist?",
+        "How many types of c2 being identical with it exist?",
+        "How many sorts of c2 being identical with it exist?"
+    ],
+    "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { ?x owl:equivalentClass <c2> . }"
+}

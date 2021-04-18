@@ -1,0 +1,26 @@
+{
+    "cqs": [
+        "How many specializations of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being identical with it exist?",
+        "How many subsets of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being equal to it exist?",
+        "How many types of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being equal to it exist?",
+        "How many specializations of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being the same as it exist?",
+        "How many sorts of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being equal to it exist?",
+        "How many types of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being the same as it exist?",
+        "How many types of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being identical with it exist?",
+        "How many kinds of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being equal to it exist?",
+        "How many specializations of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being equal to it exist?",
+        "How many sorts of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being the same as it exist?",
+        "How many forms of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being the same as it exist?",
+        "How many subsets of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being the same as it exist?",
+        "How many examples of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being identical with it exist?",
+        "How many forms of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being identical with it exist?",
+        "How many kinds of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being the same as it exist?",
+        "How many kinds of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being identical with it exist?",
+        "How many forms of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being equal to it exist?",
+        "How many examples of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being equal to it exist?",
+        "How many examples of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being the same as it exist?",
+        "How many sorts of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being identical with it exist?",
+        "How many subsets of something that op1 at least 999 c2 and that op2 at most 1 c3 and that op3 at most 1 c4 and that op4 at most 1 c5 being identical with it exist?"
+    ],
+    "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { ?x owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ; owl:onProperty <op1> ; owl:onClass <c2> ; owl:minQualifiedCardinality \"999\"^^xsd:nonNegativeInteger ] [ rdf:type owl:Restriction ; owl:onProperty <op2> ; owl:onClass <c3> ; owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger ] [ rdf:type owl:Restriction ; owl:onProperty <op3> ; owl:onClass <c4> ; owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger ] [ rdf:type owl:Restriction ; owl:onProperty <op4> ; owl:onClass <c5> ; owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger ] ) ] . }"
+}

@@ -1,0 +1,29 @@
+{
+    "cqs": [
+        "How many relations are proposed between c1 and something that op2 c2?",
+        "How many things can c1 do with something that op2 c2?",
+        "How many relations are available between c1 and something that op2 c2?",
+        "How many things may c1 do with something that op2 c2?",
+        "How many relations are described between c1 and something that op2 c2?",
+        "How many things could c1 do with something that op2 c2?",
+        "How many relations are there between c1 and something that op2 c2?",
+        "How many relations exist between c1 and something that op2 c2?",
+        "How many relations are proposed between c1 and something that op2 c2?",
+        "How many things can c1 do with something that op2 c2?",
+        "How many relations are available between c1 and something that op2 c2?",
+        "How many things may c1 do with something that op2 c2?",
+        "How many relations are described between c1 and something that op2 c2?",
+        "How many things could c1 do with something that op2 c2?",
+        "How many relations are there between c1 and something that op2 c2?",
+        "How many relations exist between c1 and something that op2 c2?",
+        "How many relations are proposed between c1 and something that op2 c2?",
+        "How many things can c1 do with something that op2 c2?",
+        "How many relations are available between c1 and something that op2 c2?",
+        "How many things may c1 do with something that op2 c2?",
+        "How many relations are described between c1 and something that op2 c2?",
+        "How many things could c1 do with something that op2 c2?",
+        "How many relations are there between c1 and something that op2 c2?",
+        "How many relations exist between c1 and something that op2 c2?"
+    ],
+    "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { <c1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:someValuesFrom [ rdf:type owl:Restriction ; owl:onProperty <op2> ; owl:someValuesFrom <c2> ] ] . }"
+}

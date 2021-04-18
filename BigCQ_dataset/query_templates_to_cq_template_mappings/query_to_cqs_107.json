@@ -1,0 +1,16 @@
+{
+    "cqs": [
+        "What something could do with c1?",
+        "What relates c1 and something?",
+        "What can c1 do to something?",
+        "What relation between c1 and something exists?",
+        "What c1 may do with something?",
+        "What c1 does with something?",
+        "What something may do with c1?",
+        "What c1 could do with something?",
+        "What c1 can do with something?",
+        "What something can do with c1?",
+        "What something does with c1?"
+    ],
+    "query": "SELECT ?x WHERE { <c1> owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:someValuesFrom [ owl:intersectionOf rdf:nil ] ] ) ] . }"
+}

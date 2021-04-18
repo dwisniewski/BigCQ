@@ -1,0 +1,26 @@
+{
+    "cqs": [
+        "How many forms of something that op1 c2 and that op2 something that op3 c3 being the same as it exist?",
+        "How many examples of something that op1 c2 and that op2 something that op3 c3 being equal to it exist?",
+        "How many kinds of something that op1 c2 and that op2 something that op3 c3 being the same as it exist?",
+        "How many specializations of something that op1 c2 and that op2 something that op3 c3 being the same as it exist?",
+        "How many types of something that op1 c2 and that op2 something that op3 c3 being the same as it exist?",
+        "How many forms of something that op1 c2 and that op2 something that op3 c3 being equal to it exist?",
+        "How many subsets of something that op1 c2 and that op2 something that op3 c3 being equal to it exist?",
+        "How many examples of something that op1 c2 and that op2 something that op3 c3 being identical with it exist?",
+        "How many kinds of something that op1 c2 and that op2 something that op3 c3 being identical with it exist?",
+        "How many specializations of something that op1 c2 and that op2 something that op3 c3 being identical with it exist?",
+        "How many kinds of something that op1 c2 and that op2 something that op3 c3 being equal to it exist?",
+        "How many sorts of something that op1 c2 and that op2 something that op3 c3 being the same as it exist?",
+        "How many subsets of something that op1 c2 and that op2 something that op3 c3 being identical with it exist?",
+        "How many examples of something that op1 c2 and that op2 something that op3 c3 being the same as it exist?",
+        "How many sorts of something that op1 c2 and that op2 something that op3 c3 being equal to it exist?",
+        "How many specializations of something that op1 c2 and that op2 something that op3 c3 being equal to it exist?",
+        "How many types of something that op1 c2 and that op2 something that op3 c3 being identical with it exist?",
+        "How many forms of something that op1 c2 and that op2 something that op3 c3 being identical with it exist?",
+        "How many subsets of something that op1 c2 and that op2 something that op3 c3 being the same as it exist?",
+        "How many types of something that op1 c2 and that op2 something that op3 c3 being equal to it exist?",
+        "How many sorts of something that op1 c2 and that op2 something that op3 c3 being identical with it exist?"
+    ],
+    "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { ?x owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ; owl:onProperty <op1> ; owl:someValuesFrom <c2> ] [ rdf:type owl:Restriction ; owl:onProperty <op2> ; owl:someValuesFrom [ rdf:type owl:Restriction ; owl:onProperty <op3> ; owl:someValuesFrom <c3> ] ] ) ] . }"
+}

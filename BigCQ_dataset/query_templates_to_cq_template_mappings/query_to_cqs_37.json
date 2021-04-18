@@ -1,0 +1,18 @@
+{
+    "cqs": [
+        "What c2 can do with c1?",
+        "what is the relation between c1 and c2?",
+        "What can c1 do to c2?",
+        "What c1 could do with c2?",
+        "What c2 does with c1?",
+        "What relation between c1 and c2 exists?",
+        "What c2 may do with c1?",
+        "What c1 may do with c2?",
+        "What c2 could do with c1?",
+        "What relates c1 and c2?",
+        "which is the relation between c1 and c2?",
+        "What c1 does with c2?",
+        "What c1 can do with c2?"
+    ],
+    "query": "SELECT ?x WHERE { <c1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:hasValue <c2> ] . }"
+}

@@ -1,0 +1,14 @@
+{
+    "cqs": [
+        "How many classes of c1 being the same as it exists?",
+        "How many classes of c1 being equal to it exists?",
+        "How many classes of c1 being identical with it exists?",
+        "How many classes of c1 is the same as it?",
+        "How many classes of c1 is identical with it?",
+        "How many classes of c1 are identical with it?",
+        "How many classes of c1 are the same as it?",
+        "How many classes of c1 are equal to it?",
+        "How many classes of c1 is equal to it?"
+    ],
+    "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { <c1> owl:equivalentClass ?x . }"
+}

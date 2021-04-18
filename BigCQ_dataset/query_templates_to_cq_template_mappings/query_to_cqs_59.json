@@ -1,0 +1,16 @@
+{
+    "cqs": [
+        "What everything that op1  c1 and that does not op2 may do with c3?",
+        "What c3 could do with everything that op1  c1 and that does not op2?",
+        "What everything that op1  c1 and that does not op2 could do with c3?",
+        "What c3 can do with everything that op1  c1 and that does not op2?",
+        "What c3 does with everything that op1  c1 and that does not op2?",
+        "What can everything that op1  c1 and that does not op2 do to c3?",
+        "What everything that op1  c1 and that does not op2 does with c3?",
+        "What everything that op1  c1 and that does not op2 can do with c3?",
+        "What c3 may do with everything that op1  c1 and that does not op2?",
+        "What relates everything that op1  c1 and that does not op2 and c3?",
+        "What relation between everything that op1  c1 and that does not op2 and c3 exists?"
+    ],
+    "query": "SELECT ?x WHERE { [ owl:equivalentClass [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:someValuesFrom <c3> ] ; owl:intersectionOf ( [ owl:complementOf [ rdf:type owl:Restriction ; owl:onProperty <op2> ; owl:someValuesFrom <c2> ] ] [ rdf:type owl:Restriction ; owl:onProperty <op1> ; owl:someValuesFrom <c1> ] ) ] . }"
+}
