@@ -50,5 +50,5 @@ with open('../verbalization2turtle.csv') as csv_file:
     #outfile.close()
 
     #Summarizer(result).print_queries()
-    #Summarizer(result).make_summary()
+    Summarizer(result).make_summary()
     #Summarizer(result).print_cqs()

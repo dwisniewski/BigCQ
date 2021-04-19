@@ -16,7 +16,7 @@
         "[WHAT] [KIND] of [THINGS] {VERB} {CAR}?"
     ],
     "SELECT_CAR": [
-        "[WHAT] {CAD} {VERB}?",
+        "[WHAT] does {CAD} {VERB}?",
         "[WHAT] {CAD} [CAN] [I] {VERB}?",
         "[WHAT] [THINGS] {CAD} {VERB}?",
         "[WHAT] [KIND] of [THINGS] {CAD} {VERB}?",
