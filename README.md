@@ -10,7 +10,7 @@ A big synthetic dataset of CQ templates to SPARQL-OWL templates mappings.
 * Provide guidelines on how CQs can be constructed to target given modelling styles.
 
 ## How to cite that work?
-We generated a persisten URI using Zenodo:
+We generated a persistent URI for that dataset using Zenodo:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4701652.svg)](https://doi.org/10.5281/zenodo.4701652)
 
 
