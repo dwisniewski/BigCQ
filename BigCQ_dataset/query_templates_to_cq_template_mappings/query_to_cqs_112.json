@@ -1,14 +1,14 @@
 {
     "cqs": [
-        "How many classes of nothing is identical with it?",
-        "How many classes of nothing being equal to it exists?",
         "How many classes of nothing are the same as it?",
-        "How many classes of nothing are identical with it?",
-        "How many classes of nothing is the same as it?",
-        "How many classes of nothing is equal to it?",
         "How many classes of nothing are equal to it?",
         "How many classes of nothing being identical with it exists?",
-        "How many classes of nothing being the same as it exists?"
+        "How many classes of nothing are identical with it?",
+        "How many classes of nothing is equal to it?",
+        "How many classes of nothing being the same as it exists?",
+        "How many classes of nothing is the same as it?",
+        "How many classes of nothing is identical with it?",
+        "How many classes of nothing being equal to it exists?"
     ],
     "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { ?x owl:equivalentClass [ owl:oneOf rdf:nil ] . }"
 }

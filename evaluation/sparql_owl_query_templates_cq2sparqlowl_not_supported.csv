@@ -1,0 +1,68 @@
+ask where { filter not exists { <C1> owl:disjointWith [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ owl:unionOf (<C2> <C3>) ] ] . } }
+"select ?x1, ?x2 where { ?x1 rdfs:subClassOf <C1>, [ a owl:Restriction ; owl:onProperty <OP1>; owl:someValuesFrom ?x2 ] . ?x2 rdfs:subClassOf <C2> } "
+select ?x where { <C1> rdfs:subClassOf [ owl:onProperty <OP1> ; owl:allValuesFrom [ owl:unionOf/rdf:rest*/rdf:first ?x ] ] } 
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+select ?x where { <C1> rdfs:subClassOf [ a owl:Restriction; owl:onProperty <OP1>; owl:someValuesFrom ?x ]. ?x rdfs:subClassOf <C2>. } 
+select ?x where { <C1> rdfs:subClassOf [ a owl:Restriction; owl:onProperty <OP1>; owl:someValuesFrom ?x ]. ?x rdfs:subClassOf <C2>. } 
+select ?x where { <C1> rdfs:subClassOf [ a owl:Restriction; owl:onProperty <OP1>; owl:someValuesFrom ?x ]. ?x rdfs:subClassOf <C2>. } 
+select ?x where { <C1> rdfs:subClassOf [ a owl:Restriction; owl:onProperty <OP1>; owl:someValuesFrom ?x ]. ?x rdfs:subClassOf <C2>. } 
+select ?x where { <C1> rdfs:subClassOf [ a owl:Restriction; owl:onProperty <OP1>; owl:someValuesFrom ?x ]. ?x rdfs:subClassOf <C2>. } 
+select ?x where { <C1> rdfs:subClassOf [ a owl:Restriction; owl:onProperty <OP1>; owl:someValuesFrom ?x ]. ?x rdfs:subClassOf <C2>. } 
+select ?x where { <C1> rdfs:subClassOf [ a owl:Restriction; owl:onProperty <OP1>; owl:someValuesFrom ?x ]. ?x rdfs:subClassOf <C2>. } 
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+SELECT ?x WHERE { ?x rdf:type lab:GenderType } 
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+"select ?x where { [] rdfs:subClassOf <C1>, [ owl:onProperty ?x; owl:someValuesFrom [] ]. } "
+SELECT ?x WHERE { <C1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom ?xx ] . ?x rdfs:subClassOf <C2> } 
+SELECT ?x WHERE { ?x rdfs:subClassOf* <C1> . ?x rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP1>; owl:someValuesFrom ?x1 ] . ?x1 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP2>; owl:someValuesFrom <C2> ] . } 
+SELECT ?x WHERE { <C1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP1> owl:someValuesFrom ?x1 ] . ?x1 rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP2>; owl:someValuesFrom ?x ] . ?x rdfs:subClassOf* <C2> . } 
+SELECT ?x WHERE { <C1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom ?xx ] . ?x rdfs:subClassOf <C2> } 
+SELECT ?x WHERE { <C1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom ?xx ] . ?x rdfs:subClassOf <C2> } 
+SELECT ?x WHERE { <C1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom ?xx ] . ?x rdfs:subClassOf <C2> } 
+"select ?x where { <C1> rdfs:subClassOf ?x. filter(?class in (<C2>, <C3>)) } "
+"select *? where { <C1> rdfs:subClassOf <C2> ,[ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ a owl:Restriction ; owl:onProperty <OP2> ; owl:someValuesFrom ?x ] ]. ?x rdfs:subClassOf <C3> .} "
+ask where { filter not exists { <C1> owl:disjointWith <C2> . } }
+select * where { <C1> rdfs:subClassOf ?x . ?x rdfs:subClassOf <C2> . } 
+ask where { <C1> owl:disjointWith <C2> . } 
+select * where { <C1> rdfs:subClassOf ?x . ?x rdfs:subClassOf <C2>. } 
+"select * where { <C1> rdfs:subClassOf <C2>, ?x . ?x rdfs:subClassOf <C3>. } "
+"select ?x where { <C1> rdfs:subClassOf <C2>, ?x . } "
+"SELECT ?x WHERE { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1>; owl:someValuesFrom ?x ] , [ a owl:Restriction ; owl:onProperty <OP2> ; <C3> ] . ?x rdfs:subClassOf <C4>. }"
+"SELECT ?x WHERE {<C1> rdfs:subClassOf  [ a owl:Restriction ; owl:onProperty <OP1>; owl:someValuesFrom ?alg ] . ?x rdfs:subClassOf <C1> , [ a owl:Restriction ; owl:onProperty <OP1>; owl:someValuesFrom ?alg ] . ?alg rdfs:subClassOf <C2> .  } "
+"SELECT ?x WHERE {<C1> rdfs:subClassOf    [ a owl:Restriction ; owl:onProperty <OP1>; owl:someValuesFrom ?alg ] . ?x rdfs:subClassOf <C1> , [ a owl:Restriction ; owl:onProperty <OP1>; owl:someValuesFrom ?alg ] . ?alg rdfs:subClassOf <C2> . } "
+SELECT ?x WHERE { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom ?x ]. ?iface rdfs:subClassOf <C2> } 
+SELECT ?x WHERE { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom ?x ]. ?iface rdfs:subClassOf <C2> } 
+SELECT ?x1 ?x2 WHERE {  <C1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ owl:intersectionOf ( <C2> [ rdf:type owl:Restriction ; owl:onProperty <OP2> ; owl:someValuesFrom ?x1 ] ) ] ] . <C1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP3> ; owl:someValuesFrom [ owl:intersectionOf ( <C2> [ rdf:type owl:Restriction ; owl:onProperty <OP4> ; owl:someValuesFrom ?x2 ] ) ] ] ; } 
+SELECT ?x1 ?x2 WHERE { <C1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ owl:intersectionOf ( <C2> [ rdf:type owl:Restriction ; owl:onProperty <OP2> ; owl:someValuesFrom ?x1 ] ) ] ] . <C1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP3> ; owl:someValuesFrom [ owl:intersectionOf ( <C2> [ rdf:type owl:Restriction ; owl:onProperty <OP4> ; owl:someValuesFrom ?x2 ] ) ] ] ; } 
+SELECT ?format WHERE { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ a owl:Restriction ; owl:onProperty <OP2> ; owl:someValuesFrom ?format ] ] . ?format rdfs:subClassOf <C2> } 
+SELECT ?x1 WHERE { <C1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ owl:intersectionOf ( <C2> [ rdf:type owl:Restriction ; owl:onProperty <OP2> ; owl:someValuesFrom ?x1 ] ) ] ] ; } 
+"ASK WHERE { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom ?x ], <C2> .<C1> rdfs:subClassOf <C2>,[ a owl:Restriction ; owl:onProperty <OP2> ; owl:someValuesFrom ?x ] . ?x rdfs:subClassOf <C3>  }"
+ASK WHERE { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ a owl:Restriction ; owl:onProperty <OP2> ; owl:someValuesFrom ?format ] ] . ?format rdfs:subClassOf <C2> . } 
+SELECT ?x WHERE { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ owl:intersectionOf ( <C2> [ a owl:Restriction ; owl:onProperty <OP2> ; owl:hasValue ?x ] ) ] ]. } 
+SELECT ?x WHERE { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom ?x ]. ?x rdfs:subClassOf <C2> } 
+"SELECT ?x WHERE { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:hasValue ""1.0"" ] , [ a owl:Restriction ; owl:onProperty <OP2> ; owl:hasValue ?date ] . } "
+SELECT ?lic ?clause WHERE {{ { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom ?lic ]. ?lic rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP2> ; owl:someValuesFrom ?clause ]. ?clause rdfs:subClassOf <C2> } union { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom ?lic ]. } } . } 
+SELECT ?x WHERE { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ owl:intersectionOf ( <C2> [ a owl:Restriction ; owl:onProperty <OP2> ; owl:hasValue ?x ] ) ] ]. } 
+ASK WHERE {{ <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ a owl:Restriction ; owl:onProperty <OP2> ; owl:someValuesFrom <C2> ] ]. } union { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ a owl:Restriction ; owl:onProperty <OP2> ; owl:someValuesFrom <C3> ] ]. } union { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1> ; owl:someValuesFrom [ a owl:Restriction ; owl:onProperty <OP2> ; owl:someValuesFrom <C4> ] ]. }}
+SELECT ?x WHERE { <C1> rdfs:subClassOf [ a owl:Restriction ; owl:onProperty <OP1>; owl:someValuesFrom ?x ] . ?x rdfs:subClassOf <C2> . } 
+"select * where { { [] rdfs:subClassOf <C1>, [ owl:onProperty ?p; owl:someValuesFrom [] ]. } union { [] rdfs:subClassOf <C1>, [ owl:onProperty ?p; owl:someValuesFrom [] ]. } } "

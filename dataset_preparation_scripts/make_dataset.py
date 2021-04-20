@@ -10,16 +10,16 @@ def is_ACE_error(verbalization: str) -> bool:
     ''' Check if verbalization contains ACE error '''
     return verbalization.startswith("/* BUG:")
 
-resources_path = './release_patterns/'
+resources_path = './statements_to_cqs_transformations/'
 pp = pprint.PrettyPrinter(indent=4)
 
 analyzer = Analyzer()
 cq_generator = CQGenerator(
-    spo_templates_path = f'{resources_path}/cq_general_templates_spo.json',
-    spo_templates_equivalence_path = f'{resources_path}/cq_general_templates_spo_equivalence.json',
-    subclass_templates_path = f'{resources_path}/cq_general_templates_subclass.json',
-    equivalence_templates_path = f'{resources_path}/cq_general_templates_equivalence.json',
-    synonymes_path = f'{resources_path}/synonym_classes.json')
+    spo_transformations_path = f'{resources_path}/cq_general_templates_spo.json',
+    spo_transformations_equivalence_path = f'{resources_path}/cq_general_templates_spo_equivalence.json',
+    subclass_transformations_path = f'{resources_path}/cq_general_templates_subclass.json',
+    equivalence_transformations_path = f'{resources_path}/cq_general_templates_equivalence.json',
+    synonyms_path = f'{resources_path}/synonym_classes.json')
 query_generator = SPARQLOWLGenerator()
 
 with open('../verbalization2turtle.csv') as csv_file:

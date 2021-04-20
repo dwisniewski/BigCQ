@@ -1,18 +1,18 @@
 {
     "cqs": [
         "What exactly 2 c2 can do with c1?",
-        "What exactly 2 c2 does with c1?",
-        "What can c1 do to exactly 2 c2?",
-        "What exactly 2 c2 could do with c1?",
-        "What c1 may do with exactly 2 c2?",
-        "What relates c1 and exactly 2 c2?",
-        "What relation between c1 and exactly 2 c2 exists?",
-        "What c1 can do with exactly 2 c2?",
         "which is the relation between c1 and exactly 2 c2?",
+        "What c1 may do with exactly 2 c2?",
         "What c1 does with exactly 2 c2?",
-        "What exactly 2 c2 may do with c1?",
+        "What relates c1 and exactly 2 c2?",
+        "What can c1 do to exactly 2 c2?",
+        "What c1 could do with exactly 2 c2?",
+        "What c1 can do with exactly 2 c2?",
+        "What exactly 2 c2 could do with c1?",
+        "What exactly 2 c2 does with c1?",
         "what is the relation between c1 and exactly 2 c2?",
-        "What c1 could do with exactly 2 c2?"
+        "What relation between c1 and exactly 2 c2 exists?",
+        "What exactly 2 c2 may do with c1?"
     ],
     "query": "SELECT ?x WHERE { <c1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:onClass <c2> ; owl:qualifiedCardinality \"2\"^^xsd:nonNegativeInteger ] . }"
 }

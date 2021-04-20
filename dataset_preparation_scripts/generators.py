@@ -9,16 +9,16 @@ def load_json(path: str) -> Dict[str, Any]:
         return json.load(json_file)
 
 class CQGenerator:
-    def __init__(self, spo_templates_path: str,
-                 spo_templates_equivalence_path: str,
-                 subclass_templates_path: str,
-                 equivalence_templates_path: str,
-                 synonymes_path: str):
-        self.spo_templates = load_json(spo_templates_path)
-        self.subclass_templates = load_json(subclass_templates_path)
-        self.spo_templates_equivalence = load_json(spo_templates_equivalence_path)
-        self.equivalence_templates = load_json(equivalence_templates_path)
-        self.synonymes = load_json(synonymes_path)
+    def __init__(self, spo_transformations_path: str,
+                 spo_transformations_equivalence_path: str,
+                 subclass_transformations_path: str,
+                 equivalence_transformations_path: str,
+                 synonyms_path: str):
+        self.spo_transformations = load_json(spo_transformations_path)
+        self.subclass_transformations = load_json(subclass_transformations_path)
+        self.spo_transformations_equivalence = load_json(spo_transformations_equivalence_path)
+        self.equivalence_transformations = load_json(equivalence_transformations_path)
+        self.synonyms = load_json(synonyms_path)
 
     def materialize_placeholders_with_phrases(self, analyzed_shape: Dict[str, Any], placeholders: Set[str],
         cqs: List[str],
@@ -43,21 +43,21 @@ class CQGenerator:
         result = []
 
         if analyzed_shape['is_equivalence']:
-            spo_templates = self.spo_templates_equivalence
-            subclass_templates = self.equivalence_templates
+            spo_templates = self.spo_transformations_equivalence
+            subclass_templates = self.equivalence_transformations
         else:
-            spo_templates = self.spo_templates
-            subclass_templates = self.subclass_templates
+            spo_templates = self.spo_transformations
+            subclass_templates = self.subclass_transformations
 
         result += self.materialize_placeholders_with_phrases(
             analyzed_shape, placeholders_with_verb,
             SynonymesGenerator(
-                spo_templates[question_type], self.synonymes).get_all_expansions())
+                spo_templates[question_type], self.synonyms).get_all_expansions())
 
         result += self.materialize_placeholders_with_phrases(
             analyzed_shape, placeholders_without_verb,
             SynonymesGenerator(
-                subclass_templates[question_type], self.synonymes).get_all_expansions(),
+                subclass_templates[question_type], self.synonyms).get_all_expansions(),
                 attach_verb_to_car=True)
         return list(set(result))
 
@@ -73,11 +73,11 @@ class CQGenerator:
         }
 
         if analyzed_shape['is_equivalence']:
-            spo_templates = self.spo_templates_equivalence
-            subclass_templates = self.equivalence_templates
+            spo_templates = self.spo_transformations_equivalence
+            subclass_templates = self.equivalence_transformations
         else:
-            spo_templates = self.spo_templates
-            subclass_templates = self.subclass_templates
+            spo_templates = self.spo_transformations
+            subclass_templates = self.subclass_transformations
 
         # if main verb is different than 'is'
         if analyzed_shape['VERB'] is not None:
@@ -89,20 +89,20 @@ class CQGenerator:
                     queries[query_type] = self.materialize_to_both_spo_subclass(analyzed_shape, {'CAR', 'VERB'}, query_type, analyzed_shape['is_equivalence'])
             if not analyzed_shape['complex_range'] and len(analyzed_shape['range_elems']) > 0:
                 for query_type in ['SELECT_CAR', 'SELECT_COUNT_CAR']:
-                    queries[query_type] = self.materialize_placeholders_with_phrases(analyzed_shape, {'CAD', 'VERB'}, SynonymesGenerator(spo_templates[query_type], self.synonymes).get_all_expansions())
+                    queries[query_type] = self.materialize_placeholders_with_phrases(analyzed_shape, {'CAD', 'VERB'}, SynonymesGenerator(spo_templates[query_type], self.synonyms).get_all_expansions())
 
             for query_type in ['SELECT_VERB', 'SELECT_COUNT_VERB']:
-                queries[query_type] = self.materialize_placeholders_with_phrases(analyzed_shape, {'CAD', 'CAR'}, SynonymesGenerator(spo_templates[query_type], self.synonymes).get_all_expansions())
+                queries[query_type] = self.materialize_placeholders_with_phrases(analyzed_shape, {'CAD', 'CAR'}, SynonymesGenerator(spo_templates[query_type], self.synonyms).get_all_expansions())
         else:
-            queries['ASK'] = self.materialize_placeholders_with_phrases(analyzed_shape, {'CAD', 'CAR'}, SynonymesGenerator(subclass_templates['ASK'], self.synonymes).get_all_expansions())
+            queries['ASK'] = self.materialize_placeholders_with_phrases(analyzed_shape, {'CAD', 'CAR'}, SynonymesGenerator(subclass_templates['ASK'], self.synonyms).get_all_expansions())
 
             if not analyzed_shape['complex_domain'] and len(analyzed_shape['domain_elems']) > 0:
                 for query_type in ['SELECT_CAD', 'SELECT_COUNT_CAD']:
-                    queries[query_type] = self.materialize_placeholders_with_phrases(analyzed_shape, {'CAR'}, SynonymesGenerator(subclass_templates[query_type], self.synonymes).get_all_expansions())
+                    queries[query_type] = self.materialize_placeholders_with_phrases(analyzed_shape, {'CAR'}, SynonymesGenerator(subclass_templates[query_type], self.synonyms).get_all_expansions())
 
             if not analyzed_shape['complex_range'] and len(analyzed_shape['range_elems']) > 0:
                 for query_type in ['SELECT_CAR', 'SELECT_COUNT_CAR']:
-                        queries[query_type] = self.materialize_placeholders_with_phrases(analyzed_shape, {'CAD'}, SynonymesGenerator(subclass_templates[query_type], self.synonymes).get_all_expansions())
+                        queries[query_type] = self.materialize_placeholders_with_phrases(analyzed_shape, {'CAD'}, SynonymesGenerator(subclass_templates[query_type], self.synonyms).get_all_expansions())
         return queries
 
     def paraphrase_cqs(self, cqs):
@@ -123,7 +123,7 @@ class CQGenerator:
                     f'[WHAT] {matched.groups(0)[0]} have {matched.groups(0)[1]} {matched.groups(0)[2]}',
                 ]
 
-                cqs_paraphrased += SynonymesGenerator(paraphrases, self.synonymes).get_all_expansions()
+                cqs_paraphrased += SynonymesGenerator(paraphrases, self.synonyms).get_all_expansions()
             cqs_paraphrased.append(cq)
         return cqs_paraphrased
 

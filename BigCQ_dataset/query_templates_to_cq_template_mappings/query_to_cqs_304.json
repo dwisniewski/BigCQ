@@ -1,18 +1,18 @@
 {
     "cqs": [
-        "What something does with no c1?",
-        "What something could do with no c1?",
-        "What relates no c1 and something?",
         "What can no c1 do to something?",
         "what is the relation between no c1 and something?",
-        "which is the relation between no c1 and something?",
         "What no c1 can do with something?",
-        "What no c1 does with something?",
-        "What something may do with no c1?",
-        "What relation between no c1 and something exists?",
+        "What something could do with no c1?",
         "What no c1 may do with something?",
+        "What something does with no c1?",
+        "What relates no c1 and something?",
         "What something can do with no c1?",
-        "What no c1 could do with something?"
+        "What no c1 could do with something?",
+        "What no c1 does with something?",
+        "What relation between no c1 and something exists?",
+        "which is the relation between no c1 and something?",
+        "What something may do with no c1?"
     ],
     "query": "SELECT ?x WHERE { <c1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:cardinality \"0\"^^xsd:nonNegativeInteger ] . }"
 }

@@ -1,13 +1,13 @@
 {
     "cqs": [
-        "How many relations are described between c1 and c2 that dp1 dt1?",
-        "How many relations are available between c1 and c2 that dp1 dt1?",
-        "How many things could c1 do with c2 that dp1 dt1?",
         "How many things can c1 do with c2 that dp1 dt1?",
-        "How many relations are there between c1 and c2 that dp1 dt1?",
-        "How many things may c1 do with c2 that dp1 dt1?",
+        "How many relations are available between c1 and c2 that dp1 dt1?",
+        "How many relations exist between c1 and c2 that dp1 dt1?",
+        "How many relations are described between c1 and c2 that dp1 dt1?",
         "How many relations are proposed between c1 and c2 that dp1 dt1?",
-        "How many relations exist between c1 and c2 that dp1 dt1?"
+        "How many things may c1 do with c2 that dp1 dt1?",
+        "How many relations are there between c1 and c2 that dp1 dt1?",
+        "How many things could c1 do with c2 that dp1 dt1?"
     ],
     "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { <c1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:someValuesFrom [ owl:intersectionOf ( <c2> [ rdf:type owl:Restriction ; owl:onProperty <dp1> ; owl:hasValue <dt1> ] ) ] ] . }"
 }

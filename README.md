@@ -9,6 +9,11 @@ A big synthetic dataset of CQ templates to SPARQL-OWL templates mappings.
 * Make Competency Question driven ontology authoring more popular, since, although CQs are suggested in many ontology design methodologies, there is very limited set of CQs made publicly available.
 * Provide guidelines on how CQs can be constructed to target given modelling styles.
 
+## How to cite that work?
+We generated a persisten URI using Zenodo:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4701652.svg)](https://doi.org/10.5281/zenodo.4701652)
+
+
 ## Where can I find the data?
 In `BigCQ_dataset` there are the following files and folders:
 * `cq_templates_only.txt` -- a list of all generated 77575 unique CQ-templates.
@@ -31,6 +36,8 @@ Just edit these files and run `make_dataset.py` to make your new (better? :) ) d
 
 ## How to use the templates to test my ontology?
 We provide a sample (proof of concept) code (using owlready2), that can parse an ontology and fill the placeholders with labels / IRIs. You can use it to adapt to your own needs.
+
+You can find the `materialize.py` script in `template_materialization_poc` folder
 
 ## Is there an input verbalizations with axiom shapes file provided?
 Sure! Please look at `verbalization2turtle.csv` in the main folder of the repository.

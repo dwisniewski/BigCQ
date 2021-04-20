@@ -1,18 +1,18 @@
 {
     "cqs": [
-        "What no c1 does with c2?",
-        "What c2 could do with no c1?",
-        "What no c1 may do with c2?",
+        "what is the relation between no c1 and c2?",
         "What relates no c1 and c2?",
-        "What no c1 could do with c2?",
-        "What no c1 can do with c2?",
-        "What c2 may do with no c1?",
-        "which is the relation between no c1 and c2?",
-        "What can no c1 do to c2?",
-        "What c2 can do with no c1?",
+        "What c2 could do with no c1?",
         "What c2 does with no c1?",
         "What relation between no c1 and c2 exists?",
-        "what is the relation between no c1 and c2?"
+        "What c2 can do with no c1?",
+        "What no c1 could do with c2?",
+        "What no c1 may do with c2?",
+        "What no c1 does with c2?",
+        "which is the relation between no c1 and c2?",
+        "What no c1 can do with c2?",
+        "What c2 may do with no c1?",
+        "What can no c1 do to c2?"
     ],
     "query": "SELECT ?x WHERE { <c1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:allValuesFrom [ owl:complementOf <c2> ] ] . }"
 }

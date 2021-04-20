@@ -1,13 +1,13 @@
 {
     "cqs": [
-        "How many relations exist between c1 and something that is c2 or that is c3?",
-        "How many relations are available between c1 and something that is c2 or that is c3?",
-        "How many relations are proposed between c1 and something that is c2 or that is c3?",
-        "How many relations are there between c1 and something that is c2 or that is c3?",
         "How many relations are described between c1 and something that is c2 or that is c3?",
-        "How many things can c1 do with something that is c2 or that is c3?",
         "How many things could c1 do with something that is c2 or that is c3?",
-        "How many things may c1 do with something that is c2 or that is c3?"
+        "How many relations are there between c1 and something that is c2 or that is c3?",
+        "How many things can c1 do with something that is c2 or that is c3?",
+        "How many things may c1 do with something that is c2 or that is c3?",
+        "How many relations are proposed between c1 and something that is c2 or that is c3?",
+        "How many relations are available between c1 and something that is c2 or that is c3?",
+        "How many relations exist between c1 and something that is c2 or that is c3?"
     ],
     "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { <c1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty ?x ; owl:someValuesFrom [ owl:unionOf ( <c2> <c3> ) ] ] . }"
 }

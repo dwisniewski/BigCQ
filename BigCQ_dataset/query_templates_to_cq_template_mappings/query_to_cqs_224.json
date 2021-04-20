@@ -1,17 +1,17 @@
 {
     "cqs": [
-        "How many types of entities c1 op1?",
-        "How many types of objects c1 op1?",
-        "How many categories of things c1 op1?",
-        "How many types of categories c1 op1?",
-        "How many types of things c1 op1?",
-        "How many classes of things c1 op1?",
-        "How many categories of entities c1 op1?",
         "How many categories of categories c1 op1?",
+        "How many types of objects c1 op1?",
+        "How many categories of entities c1 op1?",
+        "How many types of things c1 op1?",
+        "How many classes of entities c1 op1?",
+        "How many classes of objects c1 op1?",
+        "How many types of categories c1 op1?",
+        "How many classes of things c1 op1?",
         "How many categories of objects c1 op1?",
         "How many classes of categories c1 op1?",
-        "How many classes of entities c1 op1?",
-        "How many classes of objects c1 op1?"
+        "How many categories of things c1 op1?",
+        "How many types of entities c1 op1?"
     ],
     "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { <c1> rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty <op1> ; owl:cardinality \"999\"^^xsd:nonNegativeInteger ] . }"
 }

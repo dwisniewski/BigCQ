@@ -1,17 +1,17 @@
 {
     "cqs": [
-        "How many categories of objects no c1 op1?",
-        "How many classes of objects no c1 op1?",
-        "How many categories of entities no c1 op1?",
-        "How many categories of categories no c1 op1?",
         "How many types of entities no c1 op1?",
         "How many categories of things no c1 op1?",
+        "How many categories of categories no c1 op1?",
         "How many classes of things no c1 op1?",
+        "How many types of things no c1 op1?",
+        "How many categories of objects no c1 op1?",
         "How many types of objects no c1 op1?",
-        "How many types of categories no c1 op1?",
-        "How many classes of categories no c1 op1?",
+        "How many categories of entities no c1 op1?",
         "How many classes of entities no c1 op1?",
-        "How many types of things no c1 op1?"
+        "How many classes of objects no c1 op1?",
+        "How many classes of categories no c1 op1?",
+        "How many types of categories no c1 op1?"
     ],
     "query": "SELECT (COUNT(?x) AS ?cnt) WHERE { <c1> rdfs:subClassOf [ owl:complementOf [ rdf:type owl:Restriction ; owl:onProperty <op1> ; owl:someValuesFrom ?x ] ] . }"
 }
