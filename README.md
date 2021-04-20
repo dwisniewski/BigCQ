@@ -28,7 +28,7 @@ In `BigCQ_dataset` there are the following files and folders:
 
 ## Is it possible to modify/extend the dataset?
 Sure! Along with the dataset we published the `Python` code creating the dataset from scratch.
-Just enter `dataset_preparation_scripts` and type: ` PYTHONPATH=. python3 make_dataset.py ` in your terminal to regenerate the dataset. If you want to add some new CQ templates or synonym sets, you can find them in `dataset_preparation_scripts/release_patterns/`:
+Just enter `dataset_preparation_scripts` and type: ` PYTHONPATH=. python3 make_dataset.py ` in your terminal to regenerate the dataset. If you want to add some new CQ templates or synonym sets, you can find them in `dataset_preparation_scripts/statements_to_cqs_transformations/`:
 * File synonym_classes defines various synonymes sets.
 * Files with filenames starting with `cq_general_templates` define CQ templates for various needs.
 
