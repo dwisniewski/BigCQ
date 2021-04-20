@@ -11,7 +11,7 @@ A big synthetic dataset of CQ templates to SPARQL-OWL templates mappings.
 
 ## How to cite that work?
 We generated a persistent URI for that dataset using Zenodo:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4701652.svg)](https://doi.org/10.5281/zenodo.4701652)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4704674.svg)](https://doi.org/10.5281/zenodo.4704674)
 
 
 ## Where can I find the data?
